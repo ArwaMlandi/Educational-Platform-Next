@@ -15,23 +15,23 @@ export default function EditStudent() {
   const [image, setImage] = useState("");
   const dispatch = useDispatch("");
   const router = useRouter("");
-  const studentId= useSelector((state)=> state.student.studentById)
-
+  const student= useSelector((state)=> state.student.data)
+console.log(student)
   const handleUploadImage = (file) => {
     const url = URL.createObjectURL(file);
     setImage(url);
   };
 
   useEffect(() => {
-    if (router?.query?.id && !studentId?.id) {
+    if (router?.query?.id && !student?.id) {
       dispatch(getByIdStudent(router?.query?.id)).then((res) => {
         setFirstName(res.payload?.FirstName);
         setLastName(res.payload?.LastName);
         
       });
     } else {
-      setFirstName(studentId?.FirstName);
-      setLastName(studentId?.LastName);
+      setFirstName(student?.FirstName);
+      setLastName(student?.LastName);
      
     }
   }, [router]);
