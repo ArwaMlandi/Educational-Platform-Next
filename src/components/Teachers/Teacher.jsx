@@ -2,10 +2,10 @@ import { useRouter } from 'next/router';
 import { useDispatch, useSelector } from "react-redux";
 import React, { useEffect } from 'react'
 import './Teacher.css'
-import { deleteTeacher, getTeacher } from '@/store/actions/teachers.action';
+import { deleteTeacher, getTeacher } from '../../store/actions/teachers.action';
 import { MdOutlineClose } from 'react-icons/md';
 import { Button } from 'react-bootstrap';
-import routes from '@/const/routes';
+import routes from '../../const/routes';
 function Teacher() {
     const teacher = useSelector((state) => state.teacher.data);
   const router = useRouter();

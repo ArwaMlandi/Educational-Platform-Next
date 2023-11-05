@@ -3,17 +3,11 @@ import Link from 'next/link'
 import styles from './styles.module.css'
 import imgee from '../assets/images/img111.svg'
 import { AiFillPhone, AiOutlineQuestionCircle } from "react-icons/ai";
-import { MdEmail, MdLock, MdPerson } from "react-icons/md";
-import { BsList } from "react-icons/bs";
-import {BiHeart } from "react-icons/bi";
+import { MdEmail } from "react-icons/md";
 export default function Home() {
-  const backgroundImageUrl = '../assets/images/img111.svg';
+ 
 
-  const containerAllStyle = {
-    backgroundImage: `url(${backgroundImageUrl})`,
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-  };
+
   return (
     <main >
    
@@ -43,16 +37,12 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.navRight}>
-          <div className={styles.navLeft}>
-            {" "}
-            <MdLock size={14} />
-            <p>Log in</p>
-          </div>
-          <div className={styles.navLeft}>
-            {" "}
-            <MdPerson size={14} />
-            <p>Rigester</p>
-          </div>
+        <li >
+          <Link href="/login">
+            Sign in 
+          </Link>
+        </li>
+          
         </div>
       </div>
         <div className={styles.homeContent}>

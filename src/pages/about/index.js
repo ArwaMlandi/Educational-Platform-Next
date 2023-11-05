@@ -1,4 +1,4 @@
-import DashboardLayout from '@/layouts/DashboardLayout'
+import DashboardLayout from '../../layouts/DashboardLayout';
 import React, { useState } from 'react'
 import Image from 'next/image'
 import imgee from '../../assets/images/img111.svg'
@@ -7,9 +7,9 @@ import t1 from "../../assets/images/t-image1.png";
 import t2 from "../../assets/images/t-image2.jpg";
 import t3 from "../../assets/images/t-image3.jpg";
 import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
-import Becom from '@/components/Become/Becom'
-import BestEducation from '@/components/BestEducation/BestEducation'
-import ChooseUs from '@/components/ChooseUs/ChooseUs'
+import Becom from '../../components/Become/Becom';
+import BestEducation from '../../components/BestEducation/BestEducation';
+import ChooseUs from '../../components/ChooseUs/ChooseUs';
 const index = () => {
   const backgroundImageUrl = '../../assets/images/img111.svg';
 

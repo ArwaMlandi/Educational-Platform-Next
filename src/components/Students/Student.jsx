@@ -1,5 +1,5 @@
-import routes from '@/const/routes';
-import { deleteStudent, getStudent } from '@/store/actions/students.action';
+import routes from '../../const/routes';
+import { deleteStudent, getStudent } from '../../store/actions/students.action'
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react'
 import { Button } from 'react-bootstrap';

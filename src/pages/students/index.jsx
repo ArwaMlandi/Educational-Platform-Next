@@ -1,9 +1,9 @@
-import Student from '@/components/Students/Student'
-import DashboardLayout from '@/layouts/DashboardLayout'
+import Student from '../../components/Students/Student'
+import DashboardLayout from '../../layouts/DashboardLayout';
 import { useRouter } from 'next/router'
 import React from 'react'
 import { Button } from 'react-bootstrap'
-import routes from "@/const/routes";
+import routes from "../../const/routes";
 import styleStudent from './styleStudent.module.css'
 function index() {
     const router = useRouter();

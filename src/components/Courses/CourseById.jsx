@@ -2,12 +2,12 @@ import React from 'react'
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import { useRouter } from 'next/router'
-import { getById } from '@/store/actions/courses.action';
+import { getById } from '../../store/actions/courses.action';
 import styleCourse from "./styleCourse.module.css";
 import { MdArrowRight, MdMenuBook, MdStar } from "react-icons/md";
 import { Button, Card, Col } from "react-bootstrap";
 import Link from 'next/link';
-import routes from '@/const/routes';
+import routes from '../../const/routes';
 function CourseById() {
     const router = useRouter()
     const dispatch=useDispatch();

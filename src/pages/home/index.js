@@ -1,21 +1,17 @@
 import React from 'react'
-import { useState, useEffect } from "react";
-import imgee from "../../assets/images/img333.svg";
 import { FaCheck } from "react-icons/fa";
 import im4 from "../../assets/images/img12.jpg";
 import styleHome from './styleHome.module.css'
-import DashboardLayout from '@/layouts/DashboardLayout';
 import Image from 'next/image';
-import WhyUsImg from "../../assets/images/img6.jpg";
-import Category from '@/components/Category/Category';
-import Becom from '@/components/Become/Becom';
-import BestEducation from '@/components/BestEducation/BestEducation';
-import { useSelector } from 'react-redux';
-import CourseHome from '@/components/Courses/CourseHome';
-import NewsHome from '@/components/News/NewsHome';
-import Price from '@/components/Price/Price';
-import Testamonial from '@/components/Testomonial/Testamonial';
-import ChooseUs from '@/components/ChooseUs/ChooseUs';
+import DashboardLayout from '../../layouts/DashboardLayout';
+import Category from '../../components/Category/Category';
+import Becom from '../../components/Become/Becom';
+import BestEducation from '../../components/BestEducation/BestEducation';
+import CourseHome from '../../components/Courses/CourseHome';
+import NewsHome from '../../components/News/NewsHome';
+import Price from '../../components/Price/Price';
+import Testamonial from '../../components/Testomonial/Testamonial';
+import ChooseUs from '../../components/ChooseUs/ChooseUs';
 function index() {
  
     

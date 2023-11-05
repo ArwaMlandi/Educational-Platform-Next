@@ -6,7 +6,7 @@ import { MdArrowRight, MdMenuBook, MdStar } from 'react-icons/md';
 import { useDispatch, useSelector } from 'react-redux';
 //import { addToFavorite } from '../../Redux/actionSlice';
 import { toast, ToastContainer } from 'react-toastify';
-import { get } from '@/store/actions/courses.action';
+import { get } from '../../store/actions/courses.action'
 
 const CourseHome = () => {
     

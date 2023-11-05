@@ -1,6 +1,5 @@
-import routes from "@/const/routes";
-import { addNewCourse } from "@/store/actions/courses.action";
-import { addTeacher } from "@/store/actions/teachers.action";
+import routes from "../../const/routes";
+import { addTeacher } from "../../store/actions/teachers.action";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";

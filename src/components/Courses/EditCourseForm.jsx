@@ -1,8 +1,8 @@
-import routes from "@/const/routes";
+import routes from "../../const/routes";
 import {
   editCourse,
   getById,
-} from "@/store/actions/courses.action";
+} from "../../store/actions/courses.action";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";

@@ -1,6 +1,6 @@
 
-import CourseById from '@/components/Courses/CourseById';
-import DashboardLayout from '@/layouts/DashboardLayout';
+import CourseById from '../../components/Courses/CourseById';
+import DashboardLayout from '../../layouts/DashboardLayout';
 
 import React from 'react'
 

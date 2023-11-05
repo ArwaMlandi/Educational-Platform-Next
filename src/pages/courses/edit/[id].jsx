@@ -1,6 +1,6 @@
 /*import AddNewCourseForm from "@/components/Courses/AddNewCourseForm";*/
-import EditCourseForm from "@/components/Courses/EditCourseForm";
-import DashboardLayout from "@/layouts/DashboardLayout";
+import EditCourseForm from "../../../components/Courses/EditCourseForm";
+import DashboardLayout from '../../layouts/DashboardLayout';
 import React from "react";
 
 export default function index() {

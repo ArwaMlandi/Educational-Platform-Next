@@ -1,5 +1,5 @@
-import apis from "@/const/apis";
-import axiosInstance from "@/utils/axiosInstance";
+import apis from "../../const/apis";
+import axiosInstance from "../../utils/axiosInstance";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
 

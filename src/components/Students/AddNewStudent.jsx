@@ -1,5 +1,5 @@
-import routes from "@/const/routes";
-import { addStudent } from "@/store/actions/students.action";
+import routes from "../../const/routes";
+import { addStudent } from "../../store/actions/students.action";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";

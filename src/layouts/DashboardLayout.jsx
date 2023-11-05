@@ -8,9 +8,9 @@ import Image from 'next/image'
 import imgee from '../assets/images/img222.svg'
 import Link from 'next/link';
 import { Provider } from 'react-redux';
-import store from '@/store';
+import store from '../store/index'
 import "bootstrap/dist/css/bootstrap.min.css";
-import Footer from '@/components/Footer/Footer';
+import Footer from '../components/Footer/Footer';
 const DashboardLayout = ({children}) => {
     const [menueopen, setmenueopen] = useState(false);
     const [activeItem, setActiveItem] = useState(null);
@@ -41,16 +41,12 @@ const DashboardLayout = ({children}) => {
           </div>
         </div>
         <div className={styles.navRight}>
-          <div className={styles.navLeft}>
-            {" "}
-            <MdLock size={14} />
-            <p>Log in</p>
-          </div>
-          <div className={styles.navLeft}>
-            {" "}
-            <MdPerson size={14} />
-            <p>Rigester</p>
-          </div>
+        <li className={styles.navItem}>
+          <Link href="/login" onClick={() => handleClick("login")}>
+            Sign in
+          </Link>
+        </li>
+          
         </div>
       </div>
      

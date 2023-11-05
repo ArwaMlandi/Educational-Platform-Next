@@ -1,6 +1,6 @@
-import routes from "@/const/routes";
-import DashboardLayout from "@/layouts/DashboardLayout";
-import { deleteCourse, get } from "@/store/actions/courses.action";
+import routes from "../../const/routes";
+import DashboardLayout from '../../layouts/DashboardLayout';
+import { deleteCourse, get } from "../../store/actions/courses.action";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
 import React from "react";

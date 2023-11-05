@@ -1,9 +1,9 @@
-import Course from '@/components/Courses/Course'
-import DashboardLayout from '@/layouts/DashboardLayout'
+import Course from '../../components/Courses/Course'
+import DashboardLayout from '../../layouts/DashboardLayout';
 import React from 'react'
 import { Button } from "react-bootstrap";
 import { useRouter } from "next/router";
-import routes from "@/const/routes";
+import routes from "../../const/routes";
 function index() {
   const router = useRouter();
   return (
